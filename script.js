@@ -143,37 +143,69 @@
 //   }
 // }
 
-const numberOfFilms = prompt("how many movies have you already watched?");
+// const usdCurr = 28
+// const discount = 0.9;
 
-const personalMovieDB = {
-  count: numberOfFilms,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false,
-};
+// function convert(amount, curr) {
+//   return curr * amount;
+// }
 
-for (let i = 0; i < 2; i++) {
-  const a = prompt("one of the last movie what did you saw?", ""),
-    b = prompt("how much do you rate it?", "");
+// function promotion(result) {
+//   console.log(result * discount)
+// }
 
-  if (a != null && b != null && a != "" && b != "" && a.length < 50) {
-    personalMovieDB.movies[a] = b;
-    console.log("done");
-  } else {
-    console.log("error");
-    i--;
-  }
-}
+// promotion(convert(500, usdCurr));
 
-if (personalMovieDB.count < 10) {
-  console.log("few movies watched");
-} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-  console.log("you are a classic spectator");
-} else if (personalMovieDB.count >= 30) {
-  console.log("you are a cinephile");
-} else {
-  console.log("error");
-}
+// function test() {
+//   for (let i = 0; i < 5; i++){
+//     console.log(i);
+//     if(i === 3) return
+//   }
+//   console.log('Done');
+// }
 
-console.log(personalMovieDB);
+// test();
+
+// function sayHello(name) {
+//   return `Hello ${name}`;
+//  }
+
+// sayHello(`Alex`);
+
+// let num = 7;
+
+// function returnNeighboringNumbers(num) {
+//   return [num - 1, num, num + 1];
+// }
+
+// function powerOfNumber(number, power){
+
+// }
+
+// function avg(n1, n2, n3) {
+//   if (n1 > n2) return (n1 * (n2 + n3)) / 3;
+//   // return 'oops';
+// }
+
+// console.log(avg(2, 3, 5));
+
+// const str = "teSt";
+
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str);
+
+// const fruit = "Some fruti"
+
+// console.log(fruit.indexOf("q"));
+
+// const logg = 'Hello world';
+// console.log(logg.slice(6, 11))
+
+// console.log(logg.substring(6, 11))
+
+// const num = 12.12;
+// console.log(Math.round(num))
+
+// const test = "12.2px";
+// console.log(parseInt(test));
