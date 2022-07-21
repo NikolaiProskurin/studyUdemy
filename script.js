@@ -132,16 +132,16 @@
 
 // console.log(result);
 
-// first: for (let i = 0; i < 3; i++) {
-//   console.log(`first level: ${i}`);
-//   for (let j = 0; j < 3; j++) {
-//     console.log(`second level: ${j}`);
-//     for (let k = 0; k < 5; k++) {
-//       if (k === 2) break first;
-//       console.log(`third level: ${k}`);
-//     }
-//   }
-// }
+first: for (let i = 0; i < 3; i++) {
+  console.log(`first level: ${i}`);
+  for (let j = 0; j < 3; j++) {
+    console.log(`second level: ${j}`);
+    for (let k = 0; k < 5; k++) {
+      if (k === 2) break first;
+      console.log(`third level: ${k}`);
+    }
+  }
+}
 
 // const usdCurr = 28
 // const discount = 0.9;
@@ -209,3 +209,44 @@
 
 // const test = "12.2px";
 // console.log(parseInt(test));
+
+// function learnJS(lang, callback) {
+//   console.log(`I learn: ${lang}`);
+//   callback();
+// }
+
+// function done() {
+// console.log('I did this');
+// }
+
+// learnJS('JavaScript', done);
+
+// delete options.name;
+
+// console.log(options);
+// let conuter = 0;
+// for (let key in options) {
+//   if(typeof(options[key]) === 'object') {
+//     for(let i in options[key] ) {
+//       console.log(`Propertis ${i} has the meaning ${options[key][i]} `);
+//       conuter++;
+//     }
+//   } else {
+//     console.log(`Propertis ${key} has the meaning ${options[key]} `);
+//     conuter++;
+//   }
+//   }
+//   console.log(conuter);
+
+
+const options = {
+  name: "test",
+  width: 1024,
+  height: 1024,
+  coloros: {
+    border: "black",
+    bg: "red",
+  },
+};
+
+console.log(Object.keys(options).length);
